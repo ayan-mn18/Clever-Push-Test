@@ -9,7 +9,7 @@ const AllPhotosLogic = (q , category , orientation , page , pageNo) => {
     const params = useParams();
     const apiCaller = async () =>{
         setLoading(true)
-        const data = await axios.post('http://localhost:5000/getimages' , {
+        const data = await axios.post('/getimages' , {
             q : params.q ? params.q : q ,
             category : category,
             orientation: orientation,

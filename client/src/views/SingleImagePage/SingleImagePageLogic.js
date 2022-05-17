@@ -8,7 +8,7 @@ const SingleImagePageLogic = () => {
     const {id} = useParams()
     console.log(id)
     const apiCaller = async () =>{
-        const data = await axios.get(`http://localhost:5000/getimagebyid/${id}` , {
+        const data = await axios.get(`/getimagebyid/${id}` , {
             headers: {
             'Content-Type': 'application/json'
             }
